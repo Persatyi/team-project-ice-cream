@@ -4,10 +4,10 @@
     font-weight: $fw;
   }
   @mixin mq($range) {
-    $mobile: 320px;
+    $mobile: 480px;
     $tablet: 768px;
-    $desktop: 1024px;
-    $hd: 1920px;
+    $desktop: 1280px;
+    
     @if $range == mobile-only {
       @media (max-width: #{$tablet - 0.02} ) {
         @content;
@@ -28,13 +28,5 @@
       @media (min-width: $desktop) {
         @content;
       }
-    } @else if $range == desktop-only {
-      @media (min-width: $desktop) and (max-width: #{$hd - 0.02}) {
-        @content;
-      }
-    } @else if $range == hd {
-      @media (min-width: $hd) {
-        @content;
-      }
-    }
+    } 
   }
