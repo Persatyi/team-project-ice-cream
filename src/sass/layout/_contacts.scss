@@ -223,6 +223,7 @@
     &--light {
         color: var(--accent-color);
         background-color: var(--primary-white-color);
+        transition: background-color var(--transition-duration) var(--timing-function);
         &:hover, &:focus {
             background-color: var(--btn-bg-hover);
         }  
