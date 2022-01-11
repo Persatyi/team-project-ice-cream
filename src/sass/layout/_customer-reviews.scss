@@ -1,0 +1,25 @@
+.cont-cus-rev {
+  padding-top: 80px;
+  padding-bottom: 86px;
+  text-align: center;
+}
+
+
+
+.customer-reviews-point {
+  display: flex;
+  justify-content: center;
+}
+.point-acc {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.customer-reviews-text-city {
+
+}
