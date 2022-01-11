@@ -1,0 +1,36 @@
+<header class="header container">
+  <a href=""
+    ><picture>
+      <source
+        srcset="
+          ./images/header-logo/header-logo-lg.png     1x,
+          ./images/header-logo/header-logo-@2x-lg.png 2x
+        "
+        media="1280px" />
+      <source
+        srcset="
+          ./images/header-logo/header-logo-ml.png    1x,
+          ./images/header-logo/header-logo@2x-ml.png 2x
+        "
+        media="768px" />
+      <source
+        srcset="
+          ./images/header-logo/header-logo-sm.png     1x,
+          ./images/header-logo/header-logo-@2x-sm.png 2x
+        "
+        media="320px" />
+      <img src="./images/header-logo/header-logo-lg.png" alt="Лого мороженное" /></picture
+  ></a>
+  <button>
+    <svg width="25px" height="20px">
+      <use href="./images/icon-svg.svg#icon-burger-menu"></use>
+    </svg>
+  </button>
+</header>
+<div class="hero container">
+  <h1>Ice cream made with <span>passion</span></h1>
+  <ul>
+    <li><button type="button">Products</button></li>
+    <li><button type="button">How its made</button></li>
+  </ul>
+</div>
