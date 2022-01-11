@@ -1,3 +1,9 @@
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .menu {
   &__backdrop {
     position: fixed;
@@ -7,12 +13,9 @@
     height: 100vh;
     overflow-y: scroll;
     background-color: rgba(129, 83, 129, 0.158);
-
-    &.is-hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(var(--cubic-bz)),
+      visibility 250ms cubic-bezier(var(--cubic-bz));
   }
 
   &__container {
