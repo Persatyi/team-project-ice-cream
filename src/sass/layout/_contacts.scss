@@ -194,6 +194,7 @@
     }
 }
 .btn {
+    // font-family: inherit;
     min-height: 44px;
     display: flex;
     align-items: center;
@@ -207,10 +208,6 @@
     }
     @include mq(tablet) {
         padding: 0 30px;
-    }
-    &:after {
-        content: "";
-
     }
     &--accent {
         color: var(--primary-white-color);
