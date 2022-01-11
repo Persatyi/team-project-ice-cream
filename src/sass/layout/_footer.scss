@@ -13,17 +13,17 @@
   }
 }
 .footer__title {
-  max-width: 234px;
   font-family: 'Titan One', sans-serif;
   @include font(18px, 1.16, 400);
   text-transform: uppercase;
-
   color: var(--pre-title-color);
 
   @include mq(mobile-only) {
+    max-width: 234px;
     margin-bottom: 43px;
   }
   @include mq(tablet) {
+    max-width: 340px;
     margin-bottom: 43px;
     @include font(26px, 1.15, null);
     letter-spacing: 0.04em;
