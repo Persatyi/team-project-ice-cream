@@ -148,15 +148,12 @@
 
 .about__btn {
   display: flex;
-  align-self: flex-end;
   justify-content: center;
   align-items: center;
   @include font(14px, 1.28, 700);
   padding: 0px 37px;
   min-width: 176px;
   height: 44px;
-  text-decoration: none;
-  text-align: center;
   border-radius: 22px;
   background-color: var(--primary-white-color);
   color: var(--accent-color);
@@ -173,7 +170,5 @@
 }
 .btn__icon {
   margin-left: 14px;
-  margin-top: 19px;
-  margin-bottom: 17px;
-  //fill: currentColor;
+  --color3: var(--accent-color);
 }
