@@ -13,14 +13,33 @@
   @include mq(tablet) {
   }
 }
-.about__pre-title {
-    margin-bottom: 15px;
-}
-.about__title{
-    margin-bottom: 26px;
-    max-width: 200px;
 
+.about__right {
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.about__pre-title {
+    margin: 0px 55px 15px 55px;
+    padding-top: 125px;
+    max-width: 200px;
+    @include mq(tablet){
+        margin: 0px 243px 16px 244px;
+        padding-top: 130px;
+        max-width: 30px;
+    }
+    @include mq(desktop){
+        margin: 0px 465px 15px 466px;
+        padding-top: 125px;
+        max-height: 30px;
+    }
+}
+
+.about__title {
+  margin: 0px 60px 26px 60px;
+  max-width: 200px;
+}
+
 .about__wrap {
   @include mq(tablet) {
     display: flex;
@@ -32,20 +51,31 @@
   font-size: 12px;
   line-height: 1.6;
   color: var(--black-text-color);
+  margin-bottom: 47px;
 }
 
 .about__text {
+    
+}
+.about__before-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.6;
   color: var(--secondary-text-color);
+  margin-bottom: 17px;
 }
-.about__after-text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
-  color: var(--secondary-text-color);
+.about__after-text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--secondary-text-color);
+    margin-bottom: 17px;
+    background-image: url(../images/about/about-bg-mob-1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
+
 .about__btn {
   display: flex;
   align-self: flex-end;
@@ -64,6 +94,13 @@
   background-color: var(--primary-white-color);
   color: var(--accent-color);
   border: 0px solid transparent;
+  &:hover,
+  &:focus {
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--btn-bg-hover);
+    //color: var(--accent-color);
+    //outline: transparent;
+  }
 }
 
 .btn__icon {
