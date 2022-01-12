@@ -4,26 +4,31 @@
   background-color: var(--header-bg-color);
   background-image: url(../images/hero-content/ellipse-md.png);
   background-repeat: no-repeat;
-  background-size: 284px 340px;
-  background-position: center right;
+  background-size: 346px;
+  background-position: calc(100% / 2 + 50px) calc(100% / 2 - 1px);
+
+  @include mq(mobile){
+    background-position: calc(100% / 2 + 70px) calc(100% / 2 - 1px);
+  }
+
   @include mq(tablet) {
     height: 400px;
     background-image: url(../images/hero-content/ellipse-md.png);
-    background-position: 267px 31px;
+    background-position: calc(100% / 2 + 90px) calc(100% / 2 - 1px);
     background-size: 324px 322px;
   }
 
   @include mq(desktop) {
-    width: 1280px;
     height: 665px;
     background-image: url(../images/hero-content/ellipse-lg.png);
-    background-position: 490px 52px;
+    background-position: calc(100% / 2 + 90px) calc(100% / 2 - 1px);
     background-size: 538px 538px;
   }
 
   &__description {
     width: 100%;
     padding: 193px 0 200px 10px;
+
     @include mq(tablet) {
       padding: 100px 0 100px 20px;
     }
@@ -34,6 +39,7 @@
   }
 
   &__title {
+    margin-left: calc(100% / 2 - 159px);
     position: relative;
     margin-bottom: 19px;
     max-width: 210px;
@@ -45,14 +51,20 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
 
+    @include mq(mobile){
+      margin-left: calc(100% / 2 - 230px);
+    }
+
     @include mq(tablet) {
       @include font(22px, 1.14, null);
       max-width: 180px;
+      margin-left: calc(100% / 2 - 370px);
     }
 
     @include mq(desktop) {
       @include font(38px, 1.16, null);
       max-width: 277px;
+      margin-left:  0;
     }
   }
 
@@ -72,28 +84,41 @@
   &__pic {
     position: absolute;
     bottom: 0;
-    right: 38px;
+    right: calc(100% / 2 - 106px);
     z-index: 0;
+
+    @include mq(mobile){
+      right: calc(100% / 2 - 130px);
+    }
+
     @include mq(tablet) {
       bottom: 0;
-      right: 247px;
+      right: calc(100% / 2 - 136px)
     }
     @include mq(desktop) {
       bottom: 0;
-      right: 450px;
+      right: calc(100% / 2 - 136px);
     }
   }
 
   &-list {
     display: flex;
-    margin-right: -9px;
+    margin-left: calc(100% / 2 - 159px);
     z-index: 2;
-    @include mq(desktop) {
-      margin-right: -15px;
+
+    @include mq(mobile){
+      margin-left: calc(100% / 2 - 230px);
+    }
+    @include mq(tablet){
+      margin-left: calc(100% / 2 - 370px);
+      margin-bottom: 66px;
+    }
+    @include mq(desktop){
+      margin-left:  0;
     }
   }
 
-  &-list__item {
+  &-list__item:not(:last-child) {
     margin-right: 9px;
     @include mq(desktop) {
       margin-right: 15px;
@@ -142,7 +167,7 @@
     flex-direction: column;
     position: absolute;
     top: 94px;
-    right: 34px;
+    right: calc(100% / 2 - 350px);
   }
   @include mq(desktop) {
     margin-bottom: -15px;
@@ -154,6 +179,7 @@
     @include mq(tablet) {
       margin-bottom: 13px;
       position: relative;
+      z-index: 1;
       display: flex;
       flex-direction: column;
       text-align: right;
@@ -168,8 +194,8 @@
 
     &::before {
       content: '';
-      z-index: -1;
       position: absolute;
+      z-index: -1;
       right: -9px;
       top: -3px;
 
@@ -206,8 +232,7 @@
 
   &__text {
     @include mq(tablet) {
-      margin-top: 66px;
-      margin-left: 122px;
+      margin-left: calc(100% / 2 - 250px);
       max-width: 114px;
       @include font(8px, 1.5, null);
       color: var(--primary-white-color);
@@ -216,13 +241,13 @@
       @include font(14px, 1.4, null);
       max-width: 200px;
       margin-top: 112px;
-      margin-left: 165px;
+      margin-left: 176px;
     }
   }
 
   &__button {
     margin-top: 7px;
-    margin-left: 122px;
+    margin-left: calc(100% / 2 - 250px);
     width: 18px;
     height: 18px;
     border: none;
@@ -233,7 +258,7 @@
 
     @include mq(desktop) {
       margin-top: 20px;
-      margin-left: 165px;
+      margin-left: 176px;
       height: 26px;
       width: 26px;
       display: flex;
@@ -249,13 +274,16 @@
   &__pic {
     position: absolute;
     top: -60px;
-    left: -40px;
+    left: calc(100% / 2 - 370px);
+    @include mq(desktop){
+      left: -38px;
+    }
   }
 
   &__pic2 {
     position: absolute;
     top: -24px;
-    right: 24px;
+    right: calc(100% / 2 - 360px);
     @include mq(desktop) {
       top: -53px;
       right: 75px;
