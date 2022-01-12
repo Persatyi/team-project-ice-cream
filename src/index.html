@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Заголовок страницы</title>
+  <title>Ice Cream</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
@@ -16,6 +17,7 @@
 
 <body>
   <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+  <include src="./partials/header.html"></include>
   <include src="./partials/hero-header.html"></include>
   <include src="./partials/products.html"></include>
   <include src="./partials/about.html"></include>
@@ -24,7 +26,9 @@
   <include src="./partials/customer-reviews.html"></include>
   <include src="./partials/contacts.html"></include>
   <include src="./partials/footer.html"></include>
+  <include src="./partials/modal-franchise.html"></include>
   <include src="./partials/menu.html"></include>
+
 
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./index.js"></script>
