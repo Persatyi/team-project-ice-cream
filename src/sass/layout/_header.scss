@@ -5,28 +5,30 @@
   }
 
   @include mq(tablet) {
-    padding-top: 37px;
+    padding-top: 40px;
   }
-
   @include mq(desktop) {
-    position: relative;
   }
 }
 
 .header__container {
   display: flex;
   @include mq(desktop) {
+    position: relative;
     display: flex;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
 .header-logo {
   @include mq(desktop) {
     position: absolute;
-    top: 31px;
-    left: 110px;
-    transition: transform 250ms linear;
+    margin-left: -85px;
+    // top: 31px;
+    // left: 110px;
+    transition: transform 250ms var(--timing-function);
   }
   &:hover {
     transform: scale(1.1);
@@ -56,6 +58,7 @@
   &__link {
     @include font(16px, 1.31, 700);
     color: var(--primary-white-color);
+    transition: color 500ms var(--timing-function);
   }
   &__link:hover,
   &__link:focus {
@@ -89,6 +92,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 500ms var(--timing-function);
+
+  &:hover {
+    background-color: var(--btn-bg-hover);
+  }
 }
 
 .vector-menu {

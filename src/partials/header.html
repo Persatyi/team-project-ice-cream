@@ -1,11 +1,46 @@
 <header class="header">
   <div class="container header__container">
     <a href="" class="header-logo">
-      <img
+      <picture>
+        <source
+          srcset="
+            ./images/header-logo/header-logo-lg.png     1x,
+            ./images/header-logo/header-logo-@2x-lg.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/header-logo/header-logo-ml.png    1x,
+            ./images/header-logo/header-logo@2x-ml.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/header-logo/header-logo-sm.png     1x,
+            ./images/header-logo/header-logo-@2x-sm.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+
+        <img
+          src="./images/header-logo/header-logo-sm.png"
+          alt="Company logo"
+          aria-label="Company logo"
+          loading="lazy"
+        />
+      </picture>
+      <!-- <img
         src="./images/header-logo/header-logo-lg.png"
         alt="Company logo"
         aria-label="Company logo"
-      />
+      /> -->
     </a>
 
     <nav class="header-nav">
@@ -14,16 +49,24 @@
           <a href="" class="header-list__link" aria-label="Home Page">Home</a>
         </li>
         <li class="header-list__item">
-          <a href="" class="header-list__link" aria-label="About us Page">About us</a>
+          <a href="./index.html#reviews" class="header-list__link" aria-label="About us Page"
+            >About us</a
+          >
         </li>
         <li class="header-list__item">
-          <a href="" class="header-list__link" aria-label="How it’s made? Page">How it’s made?</a>
+          <a href="./index.html#about" class="header-list__link" aria-label="How it’s made? Page"
+            >How it’s made?</a
+          >
         </li>
         <li class="header-list__item">
-          <a href="" class="header-list__link" aria-label="Our products Page">Our products</a>
+          <a href="./index.html#products" class="header-list__link" aria-label="Our products Page"
+            >Our products</a
+          >
         </li>
         <li class="header-list__item">
-          <a href="" class="header-list__link" aria-label="Contact Page">Contact</a>
+          <a href="./index.html#contacts" class="header-list__link" aria-label="Contact Page"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
