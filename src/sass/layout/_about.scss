@@ -1,65 +1,32 @@
 .about {
   position: relative;
   background-color: var(--secondary-bg-color);
-  padding-top: 98px;
-//   padding-bottom: 39px;
+  padding-top: 125px;
+  //   padding-bottom: 39px;
   @include mq(tablet) {
-    padding-top: 112px;
+    padding-top: 130px;
     // padding-bottom: 66px;
   }
   @include mq(desktop) {
-    // padding-top: 119px;
+    padding-top: 125px;
   }
 }
 
-.about::after {
-  position: absolute;
-  top: 35%;
-  left: 0;
-  right: 0;
-  content: '';
-  background-image: url(../images/about/about-bg-mob-1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  max-width: 100%;
-  height: 100%;
-  z-index: 0;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    & {
-      background-image: url(../images/about/about-bg-mob-2x.png);
-    }
-  }
-  @include mq(tablet) {
-    display: none;
-  }
-  @include mq(desktop) {
-    display: block;
-    top: 50%;
-    background-image: url(../images/about/about-bg-desk-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      & {
-        background-image: url(../images/about/about-bg-desk-2x.png);
-      }
-    }
-  }
+.about__container {
+  margin: 0 auto;
 }
-
-// .about__container {
-// }
 
 .about__pre-title {
   margin-bottom: 15px;
-  padding-top: 125px;
+
   text-align: center;
   @include mq(tablet) {
     margin-bottom: 16px;
-    padding-top: 130px;
+
     text-align: center;
   }
   @include mq(desktop) {
     margin-bottom: 15px;
-    padding-top: 125px;
     text-align: center;
   }
 }
@@ -79,29 +46,70 @@
   @include mq(tablet) {
     display: flex;
   }
+  @include mq(desktop) {
+    padding-left: 62px;
+    padding-right: 17px;
+  }
+}
+
+.about__wrap::after {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  content: '';
+  background-image: url(../images/about/about-bg-mob-1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/about/about-bg-mob-2x.png);
+    }
+  }
+  @include mq(mobile) {
+    display: none;
+  }
+  @include mq(desktop) {
+    display: block;
+    top: 135px;
+    bottom: 0px;
+    background-image: url(../images/about/about-bg-desk-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/about/about-bg-desk-2x.png);
+      }
+    }
+  }
 }
 
 .about__right {
+  position: relative;
+  z-index: 2;
   margin-left: 50px;
   margin-right: 50px;
   padding-bottom: 39px;
   @include mq(tablet) {
     margin-left: 17px;
     margin-right: 36px;
+    width: 100%;
     padding-bottom: 66px;
   }
   @include mq(desktop) {
     margin-left: 74px;
-    margin-right: 117px;
+    // margin-right: 117px;
+    margin-right: 0px;
+    width: 100%;
     padding-bottom: 172px;
   }
 }
 
 .about__after-title {
   min-width: 220px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
+  @include font(12px, 1.6, 500);
   color: var(--black-text-color);
   margin-bottom: 47px;
   @include mq(tablet) {
@@ -117,27 +125,25 @@
 
 .about__text {
   min-width: 220px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
+  @include font(12px, 1.6, 500);
   @include mq(tablet) {
+    @include font(14px, 1.78, 500);
+    letter-spacing: 0.04em;
   }
   @include mq(desktop) {
+    @include font(14px, 1.94, 500);
   }
 }
 .about__before-text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
   color: var(--secondary-text-color);
   margin-bottom: 17px;
 }
 .about__after-text {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.6;
   color: var(--secondary-text-color);
   margin-bottom: 17px;
+  @include mq(tablet) {
+    margin-bottom: 62px;
+  }
 }
 
 .about__btn {
@@ -145,11 +151,7 @@
   align-self: flex-end;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.28;
-  //margin: 0 auto;
-  //margin-right: 44px;
+  @include font(14px, 1.28, 700);
   padding: 0px 37px;
   min-width: 176px;
   height: 44px;
@@ -165,9 +167,8 @@
     //color: var(--accent-color);
     //outline: transparent;
   }
-  @include mq(tablet){
-    font-size: 16px;
-    line-height: 1.31;
+  @include mq(tablet) {
+    @include font(16px, 1.31, 700);
   }
 }
 .btn__icon {
