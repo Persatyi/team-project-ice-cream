@@ -1,4 +1,4 @@
-.reviews__cont {
+.reviews {
   padding-top: 80px;
   padding-bottom: 86px;
   position: relative;
@@ -7,9 +7,20 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+
   @include mq(desktop) {
     padding-top: 132px;
     padding-bottom: 132px;
+  }
+}
+.reviews__cont {
+  height: 540px;
+  @include mq(tablet) {
+    height: 382px;
+  }
+
+  @include mq(desktop) {
+    height: 350px;
   }
 }
 // свайпер классы не менял
@@ -21,15 +32,15 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 8%;
+  bottom: 12%;
   left: 0;
   width: 100%;
   @include mq(tablet) {
-    bottom: 15%;
+    bottom: 19%;
   }
 
   @include mq(desktop) {
-    bottom: 20%;
+    bottom: 21%;
   }
 }
 .swiper-pagination-bullet-active {
