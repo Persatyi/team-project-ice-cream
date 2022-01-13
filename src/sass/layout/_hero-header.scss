@@ -271,6 +271,11 @@
     background-color: var(--primary-white-color);
     border-radius: 50%;
     color: var(--accent-color);
+    transition: bacground-color var(--transition-duration) var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--btn-bg-hover);
+    }
 
     @include mq(desktop) {
       margin-top: 20px;
