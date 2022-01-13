@@ -122,6 +122,13 @@
   }
 }
 
+.isShowBtn {
+  opacity: 1;
+  &--hide {
+    opacity: 0;
+  }
+}
+
 .back-to-top {
   position: fixed;
   z-index: 15;
