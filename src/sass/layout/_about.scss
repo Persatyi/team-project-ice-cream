@@ -9,6 +9,7 @@
   }
   @include mq(desktop) {
     padding-top: 125px;
+    padding-bottom: 65px;
   }
 }
 
@@ -92,7 +93,6 @@
   z-index: 2;
   margin-left: 50px;
   margin-right: 50px;
-  // padding-bottom: 39px;
   @include mq(tablet) {
     margin-left: 17px;
     margin-right: 36px;
@@ -100,10 +100,9 @@
   }
   @include mq(desktop) {
     margin-left: 74px;
-    // margin-right: 117px;
     margin-right: 0px;
     width: 100%;
-    padding-bottom: 172px;
+    //padding-bottom: 172px;
   }
 }
 
