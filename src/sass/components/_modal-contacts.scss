@@ -5,6 +5,7 @@
   transform: translateX(-50%);
   min-height: 100vh;
   min-width: 100vw;
+  z-index: 100;
   background-color: rgba(129, 83, 129, 0.3);
   transition: opacity 250ms ease-in-out;
 }
@@ -196,7 +197,7 @@
 }
 .form__check-text::before {
   content: '';
-  width: 16px;
+  width: 20px;
   height: 15px;
   border: 2px solid var(--text-color-zag);
   border-radius: 2px;
@@ -205,6 +206,9 @@
   background-position: center;
   background-size: 15px;
   background-repeat: no-repeat;
+  @include mq(tablet) {
+    width: 16px;
+  }
 }
 .form__check:checked + .form__check-text::before {
   background-color: var(--accent-color);
