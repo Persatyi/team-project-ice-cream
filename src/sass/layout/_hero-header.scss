@@ -1,28 +1,15 @@
 .hero {
+  overflow: hidden;
   position: relative;
   height: 500px;
   background-color: var(--header-bg-color);
-  background-image: url(../images/hero-content/ellipse-md.png);
-  background-repeat: no-repeat;
-  background-size: 346px;
-  background-position: calc(100% / 2 + 50px) calc(100% / 2 - 1px);
-
-  @include mq(mobile) {
-    background-position: calc(100% / 2 + 70px) calc(100% / 2 - 1px);
-  }
 
   @include mq(tablet) {
     height: 400px;
-    background-image: url(../images/hero-content/ellipse-md.png);
-    background-position: calc(100% / 2 + 90px) calc(100% / 2 - 1px);
-    background-size: 324px 322px;
   }
 
   @include mq(desktop) {
     height: 665px;
-    background-image: url(../images/hero-content/ellipse-lg.png);
-    background-position: calc(100% / 2 + 90px) calc(100% / 2 - 1px);
-    background-size: 538px 538px;
   }
 
   &__description {
@@ -85,7 +72,7 @@
     position: absolute;
     bottom: 0;
     right: calc(100% / 2 - 106px);
-    z-index: 0;
+    z-index: 1;
 
     @include mq(mobile) {
       right: calc(100% / 2 - 130px);
@@ -101,7 +88,36 @@
     }
   }
 
+  @keyframes animateRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__ellipse {
+    position: absolute;
+    z-index: 0;
+    max-width: 346px;
+    top: calc(100% / 2 - 175px);
+    right: calc(100% / 2 - 206px);
+    transform-origin: 53% 53%;
+    animation: animateRotate 10s linear none infinite normal;
+    @include mq(tablet) {
+      max-width: 330px;
+    }
+
+    @include mq(desktop) {
+      max-width: 540px;
+      top: calc(100% / 2 - 277px);
+      right: calc(100% / 2 - 330px);
+    }
+  }
+
   &-list {
+    position: relative;
     display: flex;
     margin-left: calc(100% / 2 - 159px);
     z-index: 2;
