@@ -271,6 +271,7 @@
     background-color: var(--primary-white-color);
     border-radius: 50%;
     color: var(--accent-color);
+    transition: bacground-color 250ms linear, color 250ms linear;
     &:hover,
     &:focus{
       background-color: var(--accent-color);
