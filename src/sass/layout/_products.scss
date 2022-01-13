@@ -36,9 +36,10 @@
   padding-top: 160px;
   margin-top: 137px;
   padding-bottom: 30px;
+  max-width: 280px;
 
-  @include mq(mobile-only) {
-    max-width: 280px;
+  @include mq(mobile) {
+    max-width: 350px;
   }
 
   @include mq(tablet) {
@@ -63,7 +64,7 @@
   &::before {
     content: '';
     position: absolute;
-    left: 16px;
+    left: calc(100% / 2 - 120px);
     top: 4px;
     background-image: url('../images/products-content/ice-cream1sm.png');
     width: 249px;
@@ -110,7 +111,7 @@
   &::before {
     content: '';
     position: absolute;
-    left: 16px;
+    left: calc(100% / 2 - 120px);
     top: 10px;
     background-image: url('../images/products-content/cofee-sm.png');
     width: 249px;
@@ -156,7 +157,7 @@
   &::before {
     content: '';
     position: absolute;
-    left: 16px;
+    left: calc(100% / 2 - 120px);
     top: 15px;
     background-image: url('../images/products-content/milkshakes-sm.png');
     width: 249px;
@@ -218,12 +219,13 @@
   height: 6px;
   background-image: url('../images/products-content/Group.png');
   transform: translate(86px);
-  left: 0px;
+  left: calc(100% / 2 - 100px);
   top: 52px;
   display: block;
   position: absolute;
   @include mq(tablet) {
     transform: translate(59px);
+    left: 0;
   }
   @include mq(desktop) {
     transform: translate(115px);
