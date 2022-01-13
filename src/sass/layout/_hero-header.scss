@@ -3,27 +3,13 @@
   position: relative;
   height: 500px;
   background-color: var(--header-bg-color);
-  // background-image: url(../images/hero-content/ellipse-md.png);
-  // background-repeat: no-repeat;
-  // background-size: 346px;
-  // background-position: calc(100% / 2 + 50px) calc(100% / 2 - 1px);
-
-  @include mq(mobile) {
-    background-position: calc(100% / 2 + 70px) calc(100% / 2 - 1px);
-  }
 
   @include mq(tablet) {
     height: 400px;
-    // background-image: url(../images/hero-content/ellipse-md.png);
-    // background-position: calc(100% / 2 + 90px) calc(100% / 2 - 1px);
-    // background-size: 324px 322px;
   }
 
   @include mq(desktop) {
     height: 665px;
-    // background-image: url(../images/hero-content/ellipse-lg.png);
-    // background-position: calc(100% / 2 + 90px) calc(100% / 2 - 1px);
-    // background-size: 538px 538px;
   }
 
   &__description {
