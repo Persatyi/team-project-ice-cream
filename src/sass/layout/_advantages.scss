@@ -1,11 +1,10 @@
 .advantages {
   background-color: var(--secondary-bg-color);
-  padding-bottom: 145px;
+  padding-bottom: 100px;
   @include mq(tablet) {
-    padding: 0px 76px 246px 36px;
+    padding-bottom: 140px;
   }
   @include mq(desktop) {
-    padding: 0px 115px 310px 115px;
     padding-bottom: 140px;
   }
 }
@@ -52,7 +51,12 @@
 }
 
 .advantages__text {
+  width: 230px;
   @include font(12px, 1.7, 700);
+
+  @include mq(mobile) {
+    width: unset;
+  }
   @include mq(tablet) {
     padding-right: 0;
     @include font(14px, 1.74, 700);
