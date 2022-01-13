@@ -32,6 +32,7 @@
 }
 .about__title {
   margin-bottom: 26px;
+  letter-spacing: 0.04em;
   text-align: center;
   min-width: 200px;
   @include mq(mobile) {
@@ -167,8 +168,9 @@
   @include mq(tablet) {
     @include font(16px, 1.31, 700);
   }
-}
-.btn__icon {
-  margin-left: 14px;
-  --color3: var(--accent-color);
+
+  .btn__icon {
+    margin-left: 14px;
+    --color3: var(--accent-color);
+  }
 }
