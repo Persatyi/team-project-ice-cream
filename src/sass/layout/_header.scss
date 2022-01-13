@@ -1,5 +1,10 @@
 .header {
-  background-color: var(--header-bg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 1;
   @include mq(mobile-only) {
     padding-top: 6px;
   }
@@ -23,11 +28,19 @@
 }
 
 .header-logo {
+  position: absolute;
+  left: calc(100% / 2 - 150px);
+
+  @include mq(mobile) {
+    left: calc(100% / 2 - 230px);
+  }
+
+  @include mq(tablet) {
+    left: calc(100% / 2 - 360px);
+  }
+
   @include mq(desktop) {
-    position: absolute;
-    margin-left: -85px;
-    // top: 31px;
-    // left: 110px;
+    left: calc(100% / 2 - 625px);
     transition: transform 250ms var(--timing-function);
   }
   &:hover {
@@ -88,7 +101,7 @@
   border-radius: 22px;
   border-color: transparent;
 
-  margin-left: 110px;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
