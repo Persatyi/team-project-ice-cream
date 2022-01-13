@@ -1,0 +1,61 @@
+<section class="hero">
+  <div class="hero__description container">
+    <picture class="hero__pic">
+      <source srcset="
+          ./images/hero-content/hero-ice-cream-sm.png    1x,
+          ./images/hero-content/hero-ice-cream@2x-sm.png 2x
+        " media="(max-width: 479px)" />
+      <source srcset="
+          ./images/hero-content/hero-ice-cream-md.png    1x,
+          ./images/hero-content/hero-ice-cream@2x-md.png 2x
+        " media="(min-width:768px) and (max-width:1279px)" />
+      <source srcset="
+          ./images/hero-content/hero-ice-cream-lg.png    1x,
+          ./images/hero-content/hero-ice-cream@2x-lg.png 2x
+        " media="(min-width: 1280px)" />
+      <img src="./images/hero-content/hero-ice-cream-sm.png" alt="ice cream cone" />
+    </picture>
+    <h1 class="hero__title">Ice cream made with <span class="hero-accent">passion</span></h1>
+    <ul class="hero-list">
+      <li class="hero-list__item">
+        <button class="hero-button--product" type="button">Products</button>
+      </li>
+      <li class="hero-list__item">
+        <button class="hero-button" type="button">How it`s made?</button>
+      </li>
+    </ul>
+    <ul class="hero-feature">
+      <li class="hero-feature__item">16<span class="hero-feature__name">cafes</span></li>
+      <li class="hero-feature__item">23<span class="hero-feature__name">foodtrucks</span></li>
+    </ul>
+    <div class="hero-adv">
+      <p class="hero-adv__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="hero-adv__button" type="button">
+        <svg class="hero-adv__arrow" width="10px" height="10px">
+          <use href="./images/icon-svg.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+      <picture class="hero-adv__pic">
+        <source srcset="./images/hero-content/milk-md.png 1x, ./images/hero-content/milk@2x-md.png 2x"
+          media="(min-width:768px) and (max-width:1279px)" />
+        <source srcset="./images/hero-content/milk-lg.png 1x, ./images/hero-content/milk@2x-lg.png 2x"
+          media="(min-width: 1280px)" />
+        <img src="./images/hero-content/milk-lg.png" alt="jug of milk" />
+      </picture>
+      <picture class="hero-adv__pic2">
+        <source srcset="
+            ./images/hero-content/sootasty-md.png    1x,
+            ./images/hero-content/sootasty@2x-md.png 2x
+          " media="(min-width:768px) and (max-width:1279px)" />
+        <source srcset="
+            ./images/hero-content/sootasty-lg.png 1x,
+            ./images/hero-content/sootasty@2x-lg.png  2x
+          " media="(min-width: 1280px)" />
+        <img src="./images/hero-content/sootasty-md.png" alt="girl eats ice cream" />
+      </picture>
+    </div>
+  </div>
+</section>

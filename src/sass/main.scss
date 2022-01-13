@@ -17,8 +17,12 @@
 
 // Components
 @import './components/title';
+@import './components/modal-location';
+@import './components/modal-franchise';
+@import './components/menu';
 
 // Layout
+@import './layout/header';
 @import './layout/hero-header';
 @import './layout/products';
 @import './layout/about';
