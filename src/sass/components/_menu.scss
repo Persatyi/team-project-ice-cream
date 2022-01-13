@@ -137,13 +137,6 @@
   align-items: center;
   justify-content: center;
   fill: var(--primary-white-color);
-  opacity: 0.5;
-  transition: background-color var(--transition-duration) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-focus-color);
-  }
 
   @include mq(tablet) {
     bottom: 30%;
@@ -156,8 +149,16 @@
 }
 
 .isShowBtn {
-  opacity: 1;
-  transition: opacity 1000ms var(--timing-function);
+  opacity: 0.8;
+  transition: opacity 1000ms var(--timing-function),
+    background-color var(--transition-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-focus-color);
+    opacity: 1;
+  }
+
   &--hide {
     opacity: 0;
   }
