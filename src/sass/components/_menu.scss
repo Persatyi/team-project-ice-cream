@@ -150,14 +150,7 @@
 
 .isShowBtn {
   opacity: 0.8;
-  transition: opacity 1000ms var(--timing-function),
-    background-color var(--transition-duration) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-focus-color);
-    opacity: 1;
-  }
+  transition: opacity 1000ms var(--timing-function);
 
   &--hide {
     opacity: 0;
