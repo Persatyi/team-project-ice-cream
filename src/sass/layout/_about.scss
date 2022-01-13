@@ -168,8 +168,9 @@
   @include mq(tablet) {
     @include font(16px, 1.31, 700);
   }
-}
-.btn__icon {
-  margin-left: 14px;
-  --color3: var(--accent-color);
+
+  .btn__icon {
+    margin-left: 14px;
+    --color3: var(--accent-color);
+  }
 }
