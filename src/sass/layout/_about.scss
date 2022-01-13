@@ -2,10 +2,10 @@
   position: relative;
   background-color: var(--secondary-bg-color);
   padding-top: 125px;
-  //   padding-bottom: 39px;
+  padding-bottom: 40px;
   @include mq(tablet) {
     padding-top: 130px;
-    // padding-bottom: 66px;
+    padding-bottom: 66px;
   }
   @include mq(desktop) {
     padding-top: 125px;
@@ -92,12 +92,11 @@
   z-index: 2;
   margin-left: 50px;
   margin-right: 50px;
-  padding-bottom: 39px;
+  // padding-bottom: 39px;
   @include mq(tablet) {
     margin-left: 17px;
     margin-right: 36px;
     width: 100%;
-    padding-bottom: 66px;
   }
   @include mq(desktop) {
     margin-left: 74px;

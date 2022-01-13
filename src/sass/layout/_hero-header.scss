@@ -7,7 +7,7 @@
   background-size: 346px;
   background-position: calc(100% / 2 + 50px) calc(100% / 2 - 1px);
 
-  @include mq(mobile){
+  @include mq(mobile) {
     background-position: calc(100% / 2 + 70px) calc(100% / 2 - 1px);
   }
 
@@ -30,7 +30,7 @@
     padding: 193px 0 200px 10px;
 
     @include mq(tablet) {
-      padding: 100px 0 100px 20px;
+      padding: 100px 0 0 20px;
     }
 
     @include mq(desktop) {
@@ -51,7 +51,7 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
 
-    @include mq(mobile){
+    @include mq(mobile) {
       margin-left: calc(100% / 2 - 230px);
     }
 
@@ -64,7 +64,7 @@
     @include mq(desktop) {
       @include font(38px, 1.16, null);
       max-width: 277px;
-      margin-left:  0;
+      margin-left: 0;
     }
   }
 
@@ -87,13 +87,13 @@
     right: calc(100% / 2 - 106px);
     z-index: 0;
 
-    @include mq(mobile){
+    @include mq(mobile) {
       right: calc(100% / 2 - 130px);
     }
 
     @include mq(tablet) {
       bottom: 0;
-      right: calc(100% / 2 - 136px)
+      right: calc(100% / 2 - 136px);
     }
     @include mq(desktop) {
       bottom: 0;
@@ -106,15 +106,15 @@
     margin-left: calc(100% / 2 - 159px);
     z-index: 2;
 
-    @include mq(mobile){
+    @include mq(mobile) {
       margin-left: calc(100% / 2 - 230px);
     }
-    @include mq(tablet){
+    @include mq(tablet) {
       margin-left: calc(100% / 2 - 370px);
       margin-bottom: 66px;
     }
-    @include mq(desktop){
-      margin-left:  0;
+    @include mq(desktop) {
+      margin-left: 0;
     }
   }
 
@@ -275,7 +275,7 @@
     position: absolute;
     top: -47px;
     left: calc(100% / 2 - 370px);
-    @include mq(desktop){
+    @include mq(desktop) {
       left: -38px;
     }
   }
