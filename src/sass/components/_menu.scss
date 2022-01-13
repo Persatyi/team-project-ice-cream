@@ -122,13 +122,6 @@
   }
 }
 
-.isShowBtn {
-  opacity: 1;
-  &--hide {
-    opacity: 0;
-  }
-}
-
 .back-to-top {
   position: fixed;
   z-index: 15;
@@ -145,17 +138,27 @@
   justify-content: center;
   fill: var(--primary-white-color);
   opacity: 0.5;
-  transition: background-color var(--transition-duration) var(--timing-function),
-    opacity var(--transition-duration) var(--timing-function);
+  transition: background-color var(--transition-duration) var(--timing-function);
 
   &:hover,
   &:focus {
     background-color: var(--btn-focus-color);
-    opacity: 1;
+  }
+
+  @include mq(tablet) {
+    bottom: 30%;
   }
 
   @include mq(desktop) {
     right: 50px;
     bottom: 100px;
+  }
+}
+
+.isShowBtn {
+  opacity: 1;
+  transition: opacity 1000ms var(--timing-function);
+  &--hide {
+    opacity: 0;
   }
 }
