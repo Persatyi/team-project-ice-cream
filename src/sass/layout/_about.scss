@@ -2,10 +2,10 @@
   position: relative;
   background-color: var(--secondary-bg-color);
   padding-top: 125px;
-  //   padding-bottom: 39px;
+  padding-bottom: 40px;
   @include mq(tablet) {
     padding-top: 130px;
-    // padding-bottom: 66px;
+    padding-bottom: 66px;
   }
   @include mq(desktop) {
     padding-top: 125px;
@@ -32,6 +32,7 @@
 }
 .about__title {
   margin-bottom: 26px;
+  letter-spacing: 0.04em;
   text-align: center;
   min-width: 200px;
   @include mq(mobile) {
@@ -91,12 +92,11 @@
   z-index: 2;
   margin-left: 50px;
   margin-right: 50px;
-  padding-bottom: 39px;
+  // padding-bottom: 39px;
   @include mq(tablet) {
     margin-left: 17px;
     margin-right: 36px;
     width: 100%;
-    padding-bottom: 66px;
   }
   @include mq(desktop) {
     margin-left: 74px;
@@ -167,8 +167,9 @@
   @include mq(tablet) {
     @include font(16px, 1.31, 700);
   }
-}
-.btn__icon {
-  margin-left: 14px;
-  --color3: var(--accent-color);
+
+  .btn__icon {
+    margin-left: 14px;
+    --color3: var(--accent-color);
+  }
 }

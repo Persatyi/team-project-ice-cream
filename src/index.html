@@ -48,6 +48,18 @@
       },
     });
   </script>
+  <script>
+    var swiper = new Swiper('.mySwiper2', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./index.js"></script>
   <script src="./js/menu.js"></script>
