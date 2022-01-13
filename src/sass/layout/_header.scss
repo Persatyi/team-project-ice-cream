@@ -40,7 +40,7 @@
   }
 
   @include mq(desktop) {
-    left: calc(100% / 2 - 625px);
+    left: calc(100% / 2 - 600px);
     transition: transform 250ms var(--timing-function);
   }
   &:hover {
