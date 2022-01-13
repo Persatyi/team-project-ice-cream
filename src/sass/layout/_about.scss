@@ -32,6 +32,7 @@
 }
 .about__title {
   margin-bottom: 26px;
+  letter-spacing: 0.04em;
   text-align: center;
   min-width: 200px;
   @include mq(mobile) {
