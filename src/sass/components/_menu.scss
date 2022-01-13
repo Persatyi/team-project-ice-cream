@@ -38,10 +38,23 @@
 
   &__button--open {
     position: absolute;
+    z-index: 10;
     top: 25px;
-    right: 25px;
+    right: calc(100% / 2 - 140px);
     border: none;
     background-color: transparent;
+
+    @include mq(mobile) {
+      right: calc(100% / 2 - 220px);
+    }
+    @include mq(tablet) {
+      top: 55px;
+      right: calc(100% / 2 - 170px);
+    }
+
+    @include mq(desktop) {
+      display: none;
+    }
   }
 
   &__button--close {
