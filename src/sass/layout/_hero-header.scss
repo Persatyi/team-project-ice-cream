@@ -271,9 +271,9 @@
     background-color: var(--primary-white-color);
     border-radius: 50%;
     color: var(--accent-color);
-    transition: bacground-color 250ms linear, color 250ms linear;
+    transition: bacground-color var(--transition-duration) var(--timing-function);
     &:hover,
-    &:focus{
+    &:focus {
       background-color: var(--btn-bg-hover);
     }
 
