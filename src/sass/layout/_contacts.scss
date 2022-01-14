@@ -163,6 +163,11 @@
 .contacts__contact-list-dscrp {
   @include font(12px, 1.5, 500);
   color: var(--secondary-text-color);
+  transition: color var(--transition-duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: #6b5b5f;
+  }
   @include mq(tablet) {
     @include font(14px, 1.83, 500);
   }
