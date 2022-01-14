@@ -72,7 +72,7 @@
       background-image: url(../images/about/about-bg-mob-2x.png);
     }
   }
-  @include mq(mobile) {
+  @include mq(tablet) {
     display: none;
   }
   @include mq(desktop) {
