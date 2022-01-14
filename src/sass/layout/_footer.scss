@@ -24,7 +24,6 @@
   }
   @include mq(tablet) {
     max-width: 340px;
-    margin-bottom: 43px;
     @include font(26px, 1.15, null);
     letter-spacing: 0.04em;
   }
@@ -111,9 +110,8 @@
   }
 
   color: var(--secondary-text-color);
+
   @include mq(tablet) {
-    padding-top: 29px;
-    padding-bottom: 18px;
     @include font(14px, 1.86, 700);
     letter-spacing: 0.02em;
   }
